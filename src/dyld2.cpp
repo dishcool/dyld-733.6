@@ -106,7 +106,6 @@ extern "C" int __fork();
 #if TARGET_OS_SIMULATOR
 	extern "C" void* gSyscallHelpers;
 #else
-	#include "dyldSyscallInterface.h"
 #endif
 
 #include "Closure.h"

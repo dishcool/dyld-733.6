@@ -43,12 +43,8 @@
 #include <new>
 #include <uuid/uuid.h>
 
-#if !TARGET_OS_DRIVERKIT && (BUILDING_LIBDYLD || BUILDING_DYLD)
-  #include <CrashReporterClient.h>
-#else
-  #define CRSetCrashLogMessage(x)
-  #define CRSetCrashLogMessage2(x)
-#endif
+#define CRSetCrashLogMessage(x)
+#define CRSetCrashLogMessage2(x)
 
 #include "DyldSharedCache.h"
 

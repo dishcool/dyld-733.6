@@ -29,12 +29,8 @@
 #include <stddef.h>
 #include <mach/mach.h>
 
-#if !TARGET_OS_DRIVERKIT && (BUILDING_LIBDYLD || BUILDING_DYLD)
-  #include <CrashReporterClient.h>
-#else
-  #define CRSetCrashLogMessage(x)
-  #define CRSetCrashLogMessage2(x)
-#endif
+#define CRSetCrashLogMessage(x)
+#define CRSetCrashLogMessage2(x)
 
 #define VIS_HIDDEN __attribute__((visibility("hidden")))
 

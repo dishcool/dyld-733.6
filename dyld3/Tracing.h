@@ -34,6 +34,7 @@
 #include <mach-o/loader.h>
 #include <System/sys/kdebug.h>
 #include <System/sys/reason.h>
+#include "dyldSyscallInterface.h"
 
 
 #define DBG_DYLD_INTERNAL_SUBCLASS              (7)

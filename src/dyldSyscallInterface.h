@@ -28,6 +28,8 @@
 
 #include <dirent.h>
 #include <mach-o/loader.h>
+#include <mach/mach_time.h>
+
 
 #if __cplusplus
 namespace dyld {
